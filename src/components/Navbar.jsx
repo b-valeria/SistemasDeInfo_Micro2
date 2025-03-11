@@ -1,6 +1,6 @@
 import React,{use} from 'react'
 import { Link } from 'react-router'
-import {UserContext} from '../context/UserContext'
+import {UserContext} from '../Context/UserContext'
 import {getAuth,signOut} from 'firebase/auth';
 import { app } from '../firebase';
 const auth = getAuth(app)

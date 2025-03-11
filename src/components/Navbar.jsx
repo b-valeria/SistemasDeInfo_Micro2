@@ -19,7 +19,7 @@ export default function Navbar() {
             <ul className='flex justify-between px-32 mt-2  items-center text-2xl  text-[#27034b] '>
                 <li><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/af5ced3c35b122040f4ac92ba7f1b1e9a1a8bb6d" alt="Logo" className='w-24 h-auto' /></li>
                 <li><Link to="/">Home</Link></li>
-                <li>Destinos</li>
+                <Link to='/destinos'>Destinos</Link>
                 <li>Novedades</li>
                 <li>Contacto </li>
 

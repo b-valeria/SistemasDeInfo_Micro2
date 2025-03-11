@@ -1,0 +1,93 @@
+.container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.largeCard {
+    width: 900px;
+    height: 500px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #27034B;
+    padding: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Ajusta este valor para mover todo hacia abajo */
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    background-color: #27034B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid white;
+    padding-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    background-color: white;
+    border-color: #27034B;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.cardContent h2 {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.card:hover .cardContent h2 {
+    color: #27034B;
+}
+
+.cardContent img {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    border: 3px solid white;
+    object-fit: cover;
+    transition: border-color 0.3s;
+}
+
+.card:hover .cardContent img {
+    border-color: #27034B;
+}
+
+.h1 {
+    color: #27034B;
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}

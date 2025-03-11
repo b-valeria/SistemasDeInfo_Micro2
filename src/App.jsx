@@ -3,6 +3,7 @@ import Home from "./Pages/Home"
 import HomeLayout from "./components/HomeLayout"
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
+import Destinos from "./components/Destinos";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/destinos" element={<Destinos />} />
 
         </Route>
 

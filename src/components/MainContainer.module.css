@@ -1,0 +1,186 @@
+.mainContainer {
+    background-image: url(https://cdn.builder.io/api/v1/image/assets/TEMP/cc0cc787160ad26fba54087f89d90cc3881553fe);
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 25px;
+  }
+  .header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    display: flex;
+  }
+  @media (width<=640px) {
+    .header {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  .logo {
+    width: 211px;
+    height: 211px;
+  }
+  @media (width<=640px) {
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .navLinks {
+    align-items: center;
+    gap: 88px;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .navLinks {
+      gap: 40px;
+    }
+  }
+  @media (width<=640px) {
+    .navLinks {
+      display: none;
+    }
+  }
+  .navItem {
+    color: #27034b;
+    font-family: Italiana, serif;
+    font-size: 36px;
+    text-decoration: none;
+  }
+  @media (width<=991px) {
+    .navItem {
+      font-size: 28px;
+    }
+  }
+  .loginButton {
+    color: #27034b;
+    border: 3px solid #27034b;
+    border-radius: 10px;
+    height: 50px;
+    margin-left: 40px;
+    padding: 0 20px;
+    font-family: Italiana, serif;
+    font-size: 36px;
+    background: transparent;
+    cursor: pointer;
+  }
+  @media (width<=991px) {
+    .loginButton {
+      font-size: 28px;
+    }
+  }
+  .heroSection {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .mainTitle {
+    color: #27034b;
+    max-width: 1036px;
+    margin: 0 auto 40px;
+    font-family: Inter, sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+  }
+  @media (width<=991px) {
+    .mainTitle {
+      padding: 0 20px;
+      font-size: 48px;
+    }
+  }
+  @media (width<=640px) {
+    .mainTitle {
+      font-size: 36px;
+    }
+  }
+  .subtitle {
+    color: #000;
+    margin-bottom: 40px;
+    font-family: Italiana, serif;
+    font-size: 48px;
+  }
+  @media (width<=991px) {
+    .subtitle {
+      font-size: 36px;
+    }
+  }
+  @media (width<=640px) {
+    .subtitle {
+      font-size: 28px;
+    }
+  }
+  .searchContainer {
+    max-width: 783px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .searchInput {
+    color: #27034b;
+    background-color: #d9d9d9;
+    border: none;
+    width: 100%;
+    height: 57px;
+    padding: 0 20px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+  }
+  .searchIcon {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .infoCards {
+    justify-content: center;
+    gap: 48px;
+    padding: 0 59px;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .infoCards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (width<=640px) {
+    .infoCards {
+      padding: 0 20px;
+    }
+  }
+  .infoCard {
+    backdrop-filter: blur(44.5px);
+    background-color: #d9d9d91a;
+    border-radius: 15px;
+    width: 408px;
+    height: 381px;
+    padding: 20px;
+    box-shadow:
+      inset 44.5px -44.5px 44.5px #a5a5a51a,
+      inset -44.5px 44.5px 44.5px #ffffff1a;
+  }
+  @media (width<=640px) {
+    .infoCard {
+      width: 100%;
+    }
+  }
+  .uniLogo {
+    width: 87px;
+    height: 87px;
+    margin-bottom: 10px;
+  }
+  .cardTitle {
+    color: #27034b;
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  .cardText {
+    color: #fff;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+  }

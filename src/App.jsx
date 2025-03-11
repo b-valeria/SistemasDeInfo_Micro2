@@ -4,6 +4,7 @@ import HomeLayout from "./components/HomeLayout"
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Destinos from "./components/Destinos";
+import DestinationDetail from './components/DestinationDetail'
 
 
 function App() {

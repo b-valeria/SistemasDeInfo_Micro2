@@ -5,6 +5,7 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Destinos from "./components/Destinos";
 
+
 function App() {
 
 
@@ -19,7 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/destinos" element={<Destinos />} />
-
+          <Route path='/destinos/:destino' element={<DestinationDetail/>} />
         </Route>
 
 

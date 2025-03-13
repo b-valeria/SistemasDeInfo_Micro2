@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
+import { NavLink } from "react-router";
 import styles from "./DestinationDetailCard.module.css";
-import Header from "./Header";
 import { useParams } from "react-router";
 import { destinos } from "./destino";
 
@@ -19,10 +19,9 @@ function DestinationDetailCard() {
         <div className={styles.detailIzquierdo}>
             <img src="/Foto_Avila.webp" className={styles.detailImage}/>
 
-
-            <button className={styles.detailReservar}>
-                Reservar
-            </button>
+            <NavLink to={'/destinos/' + params.destino + '/reservar'} className={styles.detailReservar}>
+            Reservar
+            </NavLink>
 
         </div>
         <div className={styles.detailDerecho}>

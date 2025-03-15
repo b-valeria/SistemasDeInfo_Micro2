@@ -5,6 +5,7 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Destinos from "./components/Destinos";
 import DestinationDetail from './components/DestinationDetail'
+import PaginReserva from "./components/PaginReserv"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/destinos" element={<Destinos />} />
           <Route path='/destinos/:destino' element={<DestinationDetail/>} />
+          <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />
         </Route>
 
 

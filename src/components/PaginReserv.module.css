@@ -1,0 +1,50 @@
+.mainContainer{
+    width: 100vw;
+    height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.cardForm{
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    background-color: #815E6C;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.labelContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    border: 2px solid #fff;
+    padding: 12px;
+    border-radius: 8px;
+}
+.checkBoxLabel{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.selectOption{
+    background-color: #815E6C;
+}
+.selectList{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+}

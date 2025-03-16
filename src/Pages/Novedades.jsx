@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Novedades.module.css';
+import styles from './components/Novedades.module.css';
 
 function Novedades() {
     return (

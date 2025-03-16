@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './components/Novedades.module.css';
 
+
 function Novedades() {
     return (
         <main className={styles.customBackground}>

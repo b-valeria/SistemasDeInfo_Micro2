@@ -20,7 +20,7 @@ export default function Navbar() {
                 <li><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/af5ced3c35b122040f4ac92ba7f1b1e9a1a8bb6d" alt="Logo" className='w-24 h-auto' /></li>
                 <li><Link to="/">Home</Link></li>
                 <Link to='/destinos'>Destinos</Link>
-                <li>Novedades</li>
+                <li><Link to="/novedades">Novedades</Link></li>
                 <li>Contacto </li>
 
 

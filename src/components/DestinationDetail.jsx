@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import styles from "./MainContainer.module.css";
 import DestinationDetailCard from "./DestinationDetailCard";
-
+import styles from "./DestinationDetail.module.css";
 
 function DestinationDetail() {
 

@@ -9,7 +9,7 @@ export const destinos = [
       "El camino de subida es ancho y rojizo. ",
     ],
     dificultad: "Baja",
-    actividades_disponibles:"Fotografía y Senderismo",
+    actividades_disponibles:["Fotografia", "Senderismo:"],
     puntos_de_interes:"Centro Deportivo Sabas Nieves",
     duracion:"60 minutos"
   },
@@ -23,7 +23,7 @@ export const destinos = [
       "El camino de subida es ancho y rojizo. ",
     ],
     dificultad: "Baja",
-    actividades_disponibles:"Fotografía y Senderismo",
+    actividades_disponibles:["Fotografia", "Senderismo:"],
     puntos_de_interes:"Centro Deportivo Sabas Nieves",
     duracion:"60 minutos"
   },
@@ -37,7 +37,7 @@ export const destinos = [
       "El camino de subida es ancho y rojizo. ",
     ],
     dificultad: "Baja",
-    actividades_disponibles:"Fotografía y Senderismo",
+    actividades_disponibles:["Fotografia", "Senderismo:"],
     puntos_de_interes:"Centro Deportivo Sabas Nieves",
     duracion:"60 minutos"
   },
@@ -51,7 +51,7 @@ export const destinos = [
       "El camino de subida es ancho y rojizo. ",
     ],
     dificultad: "Baja",
-    actividades_disponibles:"Fotografía y Senderismo",
+    actividades_disponibles:["Fotografia", "Senderismo:"],
     puntos_de_interes:"Centro Deportivo Sabas Nieves",
     duracion:"60 minutos"
   },
@@ -65,7 +65,7 @@ export const destinos = [
       "El camino de subida es ancho y rojizo. ",
     ],
     dificultad: "Baja",
-    actividades_disponibles:"Fotografía y Senderismo",
+    actividades_disponibles:["Fotografia", "Senderismo:"],
     puntos_de_interes:"Centro Deportivo Sabas Nieves",
     duracion:"60 minutos"
   },
@@ -79,7 +79,7 @@ export const destinos = [
       "El camino de subida es ancho y rojizo. ",
     ],
     dificultad: "Baja",
-    actividades_disponibles:"Fotografía y Senderismo",
+    actividades_disponibles:["Fotografia", "Senderismo:"],
     puntos_de_interes:"Centro Deportivo Sabas Nieves",
     duracion:"60 minutos"
   },

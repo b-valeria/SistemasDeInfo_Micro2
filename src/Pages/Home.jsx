@@ -41,7 +41,8 @@ export default function Home() {
 
             <section className=' flex gap-6 justify-center items-center mt-10 mb-28'>
             {cardsData.map((card, index) => (
-                    <Card key={index} title={card.title} text={card.text} />
+                    <Card key={index} title={card.title} text={card.text} width={card.width} height={card.height} />
+
                 ))}
             </section>
         </>

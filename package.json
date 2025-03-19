@@ -14,11 +14,8 @@
     "firebase": "^11.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.3.0",
-<<<<<<< HEAD
-    "react-router-dom": "^7.3.0",
-=======
->>>>>>> 639656033b863ed7ed0a5e70a72598ed6ad06146
+    "react-router": "^7.4.0",
+    "react-router-dom": "^7.4.0",
     "tailwindcss": "^4.0.12",
     "tailwindcss-font-inter": "^4.0.0"
   },

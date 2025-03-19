@@ -1,0 +1,7 @@
+.customBackground {
+    background-image: url('/images/nuevoback.jpg');
+    background-size: cover;
+    background-position: center;
+
+    --background-image: url('/images/nuevoback.jpg')!important;
+}

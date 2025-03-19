@@ -5,7 +5,11 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Destinos from "./components/Destinos";
 import DestinationDetail from './components/DestinationDetail'
+<<<<<<< HEAD
 import PaginReserva from "./components/PaginReserv"
+=======
+import Novedades from './Pages/Novedades';
+>>>>>>> f376a7daea2cbb23918b2827c888374e26bf4fd6
 
 
 function App() {
@@ -23,7 +27,11 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/destinos" element={<Destinos />} />
           <Route path='/destinos/:destino' element={<DestinationDetail/>} />
+<<<<<<< HEAD
           <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />
+=======
+          <Route path="/novedades" element={<Novedades />} /> 
+>>>>>>> f376a7daea2cbb23918b2827c888374e26bf4fd6
         </Route>
 
 

@@ -2,7 +2,7 @@
 import * as React from "react";
 import DestinationHeader from "../../components/DestinationHeader";
 import DestinationContent from "../../components/DestinationContent";
-import image from "../../images/image1.jpg";
+import image from "../../images/image4.png";
 
 const MuestraDestino: React.FC = () => {
   
@@ -11,13 +11,13 @@ const MuestraDestino: React.FC = () => {
     <main className="flex overflow-hidden flex-col items-end pt-8 pl-16 bg-stone-500 max-md:pl-5">
       <DestinationHeader name="Pico Naiguata"/>
       <DestinationContent 
-      T1="Sabas Nieves es un área de esparcimiento y deporte en el Parque Nacional Warairarepano, en Caracas, Venezuela. Toma la forma de un gimnasio natural al aire libre." 
-      T2="•	Cuenta con puestos de guardaparques, servicios de comida, y áreas de ejercicio" 
-      T3="•	El camino de subida es ancho y rojizo." 
-      duration="40" 
-      dificultad="Baja" 
+      T1="El Pico Naiguatá es uno de los picos más altos del Parque Nacional Warairarepano, en Caracas. Es una de las rutas más desafiantes de la zona." 
+      T2="•	Su ascenso es empinado y cubierto por una vegetación densa" 
+      T3="•	La vista desde la cima es impresionante, con vistas a Caracas y al mar Caribe" 
+      duration="6-7" 
+      dificultad="Alta" 
       actividades="•	Fotografía y Senderismo" 
-      interes="•	Centro Deportivo Sabas Nieves"
+      interes="•	Vista panorámica desde la cima, flora y fauna única"
       imagen = {image}
       />
     </main>

@@ -30,7 +30,7 @@ const DestinationContent: React.FC<DestinationContentProps> = ({T1,T2,T3,duratio
             </ul>
             <dl className="mt-4">
               <dt className="font-bold inline block">Duracion:</dt>
-              <dd className="inline ml-2">{duration} min</dd>
+              <dd className="inline ml-2">{duration} h</dd>
               <br></br>
               <dt className="font-bold text-[rgba(39,3,75,1)] mt-4 inline block">Dificultad:</dt>
               <dd className="inline ml-2">{dificultad}</dd>

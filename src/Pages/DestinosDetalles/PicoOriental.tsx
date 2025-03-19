@@ -2,7 +2,7 @@
 import * as React from "react";
 import DestinationHeader from "../../components/DestinationHeader";
 import DestinationContent from "../../components/DestinationContent";
-import image from "../../images/image1.jpg";
+import image from "../../images/image3.png";
 
 const MuestraDestino: React.FC = () => {
   
@@ -11,13 +11,13 @@ const MuestraDestino: React.FC = () => {
     <main className="flex overflow-hidden flex-col items-end pt-8 pl-16 bg-stone-500 max-md:pl-5">
       <DestinationHeader name="Pico Oriental"/>
       <DestinationContent 
-      T1="Sabas Nieves es un área de esparcimiento y deporte en el Parque Nacional Warairarepano, en Caracas, Venezuela. Toma la forma de un gimnasio natural al aire libre." 
-      T2="•	Cuenta con puestos de guardaparques, servicios de comida, y áreas de ejercicio" 
-      T3="•	El camino de subida es ancho y rojizo." 
-      duration="40" 
-      dificultad="Baja" 
-      actividades="•	Fotografía y Senderismo" 
-      interes="•	Centro Deportivo Sabas Nieves"
+      T1="El Pico Oriental es un destino popular para los senderistas más experimentados que buscan vistas excepcionales." 
+      T2="•	El sendero lleva a través de bosques y áreas de alta montaña" 
+      T3="•	Se puede disfrutar de una vista impresionante del valle de Caracas y la costa" 
+      duration="4" 
+      dificultad="Alta" 
+      actividades="•	Observación de aves y Senderismo" 
+      interes="•	Vistas de Caracas, flora diversa"
       imagen = {image}
       />
     </main>

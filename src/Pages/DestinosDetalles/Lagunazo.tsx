@@ -2,7 +2,7 @@
 import * as React from "react";
 import DestinationHeader from "../../components/DestinationHeader";
 import DestinationContent from "../../components/DestinationContent";
-import image from "../../images/image1.jpg";
+import image from "../../images/image2.png";
 
 const MuestraDestino: React.FC = () => {
   
@@ -11,13 +11,13 @@ const MuestraDestino: React.FC = () => {
     <main className="flex overflow-hidden flex-col items-end pt-8 pl-16 bg-stone-500 max-md:pl-5">
       <DestinationHeader name="Lagunazo"/>
       <DestinationContent 
-      T1="Sabas Nieves es un área de esparcimiento y deporte en el Parque Nacional Warairarepano, en Caracas, Venezuela. Toma la forma de un gimnasio natural al aire libre." 
-      T2="•	Cuenta con puestos de guardaparques, servicios de comida, y áreas de ejercicio" 
-      T3="•	El camino de subida es ancho y rojizo." 
-      duration="40" 
-      dificultad="Baja" 
-      actividades="•	Fotografía y Senderismo" 
-      interes="•	Centro Deportivo Sabas Nieves"
+      T1="Lagunazo es una ruta famosa por el lago que se encuentra en su cumbre. Es un destino ideal para quienes buscan una caminata larga y gratificante." 
+      T2="•	El sendero atraviesa bosques densos y termina en un hermoso lago de montaña" 
+      T3="•	Es conocido por su clima fresco y las vistas panorámicas" 
+      duration="5-6" 
+      dificultad="Media" 
+      actividades="•	Fotografía y Acampada" 
+      interes="•	El lago de montaña, vistas a la ciudad y la costa"
       imagen = {image}
       />
     </main>

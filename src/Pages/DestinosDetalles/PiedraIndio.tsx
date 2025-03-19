@@ -2,7 +2,7 @@
 import * as React from "react";
 import DestinationHeader from "../../components/DestinationHeader";
 import DestinationContent from "../../components/DestinationContent";
-import image from "../../images/image1.jpg";
+import image from "../../images/image6.png";
 
 const MuestraDestino: React.FC = () => {
   
@@ -11,13 +11,13 @@ const MuestraDestino: React.FC = () => {
     <main className="flex overflow-hidden flex-col items-end pt-8 pl-16 bg-stone-500 max-md:pl-5">
       <DestinationHeader name="Piedra Indio"/>
       <DestinationContent 
-      T1="Sabas Nieves es un área de esparcimiento y deporte en el Parque Nacional Warairarepano, en Caracas, Venezuela. Toma la forma de un gimnasio natural al aire libre." 
-      T2="•	Cuenta con puestos de guardaparques, servicios de comida, y áreas de ejercicio" 
-      T3="•	El camino de subida es ancho y rojizo." 
-      duration="40" 
-      dificultad="Baja" 
+      T1="Piedra Indio es una ruta intermedia ideal para aquellos que buscan disfrutar de formaciones rocosas y vistas panorámicas sin un recorrido excesivamente difícil" 
+      T2="•	El camino es corto pero desafiante, con paisajes espectaculares" 
+      T3="•	Es perfecta para aquellos que no tienen experiencia avanzada pero desean un reto moderado" 
+      duration="3" 
+      dificultad="Media" 
       actividades="•	Fotografía y Senderismo" 
-      interes="•	Centro Deportivo Sabas Nieves"
+      interes="•	Formaciones rocosas, vistas de Caracas y la costa"
       imagen = {image}
       />
     </main>

@@ -14,7 +14,7 @@ const MuestraDestino: React.FC = () => {
       T1="Sabas Nieves es un área de esparcimiento y deporte en el Parque Nacional Warairarepano, en Caracas, Venezuela. Toma la forma de un gimnasio natural al aire libre." 
       T2="•	Cuenta con puestos de guardaparques, servicios de comida, y áreas de ejercicio" 
       T3="•	El camino de subida es ancho y rojizo." 
-      duration="40" 
+      duration="0.6" 
       dificultad="Baja" 
       actividades="•	Fotografía y Senderismo" 
       interes="•	Centro Deportivo Sabas Nieves"

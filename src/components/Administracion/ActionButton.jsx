@@ -1,14 +1,12 @@
 "use client";
 import React, { useState } from "react";
 
-const ActionButton = ({ children, onClick }) => {
+const ActionButton = ({ children, section }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
-    if (children === "Crear") {
+    if (children === "Crear" && (section === "gestion-guias" || section === "actividades")) {
       setIsModalOpen(true);
-    } else if (onClick) {
-      onClick();
     }
   };
 
@@ -26,9 +24,26 @@ const ActionButton = ({ children, onClick }) => {
           <div className="modal">
             <button className="close-button" onClick={handleCloseModal}>X</button>
             <div className="modal-content">
-              <h2>Creacion Actividad</h2>
-              <p>Aquí puedes poner cualquier contenido que desees. 
-              </p>
+              <h2>{section === "gestion-guias" ? "Gestión de Guías" : "Actividades"}</h2>
+              <form>
+                {section === "gestion-guias" ? (
+                  <>
+                    <input type="text" placeholder="Nombre del Guía" className="form-input" />
+                    <input type="text" placeholder="Correo eléctronico" className="form-input" />
+                    <input type="text" placeholder="Contraseña" className="form-input" />
+                  </>
+                ) : (
+                  <>
+                    <input type="text" placeholder="Nombre de la Actividad" className="form-input" />
+                    <input type="text" placeholder="Descripción" className="form-input" />
+                    <input type="date" placeholder="Fecha" className="form-input" />
+                    <input type="text" placeholder="Lugar" className="form-input" />
+                    <input type="text" placeholder="Duración" className="form-input" />
+                    <input type="text" placeholder="Costo" className="form-input" />
+                  </>
+                )}
+                <button type="submit" className="accept-button">Aceptar</button>
+              </form>
             </div>
           </div>
         </div>
@@ -87,6 +102,26 @@ const ActionButton = ({ children, onClick }) => {
         }
         .modal-content {
           /* Add any additional styles for the modal content here */
+        }
+        .form-input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 2px solid #27034b;
+          border-radius: 5px;
+        }
+        .accept-button {
+          background-color: #fff;
+          color: #27034b;
+          border: 2px solid #27034b;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .accept-button:hover {
+          background-color: #27034b;
+          color: #fff;
         }
       `}</style>
     </>

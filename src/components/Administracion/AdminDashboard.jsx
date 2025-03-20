@@ -24,19 +24,19 @@ const AdminDashboard = () => {
           <DashboardSection title="TIPOS">
             <ActionButton>Visualizar</ActionButton>
             <ActionButton>Actualizar</ActionButton>
-            <ActionButton>Crear</ActionButton>
+            <ActionButton section="tipos">Crear</ActionButton>
             <ActionButton>Eliminar</ActionButton>
           </DashboardSection>
 
           <DashboardSection title="Actividades">
             <ActionButton>Visualizar</ActionButton>
             <ActionButton>Actualizar</ActionButton>
-            <ActionButton>Crear</ActionButton>
+            <ActionButton section="actividades">Crear</ActionButton>
             <ActionButton>Eliminar</ActionButton>
           </DashboardSection>
 
           <DashboardSection title="Gestión de Guías">
-            <ActionButton>Crear</ActionButton>
+            <ActionButton section="gestion-guias">Crear</ActionButton>
             <ActionButton>Pagar</ActionButton>
             <ActionButton>Asignar</ActionButton>
             <ActionButton>Eliminar</ActionButton>

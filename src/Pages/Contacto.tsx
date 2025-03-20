@@ -5,7 +5,6 @@ import { ContactCard } from "../components/ContactCard";
 const ContactPage: React.FC = () => {
   return (
     <main className="relative w-full bg-white min-h-[screen]">
-      <NavigationHeader />
       <section className="relative w-full">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/43f481aa0ab6f61910faac3ac611c36c1a0ccbf1"

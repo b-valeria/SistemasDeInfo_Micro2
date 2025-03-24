@@ -5,7 +5,26 @@ import Login from "./Pages/Login"
 import Register from "./Pages/Register"
 import Destinos from "./components/Destinos";
 import DestinationDetail from './components/DestinationDetail'
+import Novedades from './Pages/Novedades';
+import Contacto from './Pages/Contacto';
+
+/*import SabasNieves from './Pages/DestinosDetalles/SabasNieves';
+import Lagunazo from './Pages/DestinosDetalles/Lagunazo';
+import ElBanquito from './Pages/DestinosDetalles/ElBanquito';
+import PicoNaiguata from './Pages/DestinosDetalles/PicoNaiguata';
+import PiedraIndio from './Pages/DestinosDetalles/PiedraIndio';
+import PicoOriental from './Pages/DestinosDetalles/PicoOriental';
+<<<<<<< HEAD
+
+import PaginReserva from "./components/PaginReserv";
+
+=======
+*/
 import PaginReserva from "./components/PaginReserv"
+>>>>>>> 6ea10caeb2f221a7ba99a6cd1991753bee5ff322
+
+
+import AdminDashboard from "./components/Administracion/AdminDashboard";
 
 
 function App() {
@@ -15,7 +34,8 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route element={<HomeLayout />}>
+        <Route element={<HomeLayout />}>                  
+
 
 
           <Route path="/" element={<Home />} />
@@ -23,7 +43,18 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/destinos" element={<Destinos />} />
           <Route path='/destinos/:destino' element={<DestinationDetail/>} />
+          <Route path="/novedades" element={<Novedades />} /> 
+          <Route path="/contacto" element={<Contacto />} />
+
+
+
+
           <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />
+        
+
+
+
+          <Route path="/Administrador" element={<AdminDashboard />} />
         </Route>
 
 

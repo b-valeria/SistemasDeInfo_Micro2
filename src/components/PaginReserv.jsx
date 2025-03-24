@@ -1,12 +1,41 @@
 "use client";
 import React from "react";
 import styles from "./PaginReserv.module.css";
+import { useParams } from "react-router";
+import { obtenerDestinoPorID } from "../firebase/destinos.firebase";
+
+
 
 function PaginReserva() {
-  let rutas = ["Sabas-Nieves", "Pico-Naiguata"];
-  let actividades = ["Senderismo", "Fotografia"];
+  let params = useParams()
+
+    const [destino, setDestino] = React.useState([]);
+    const [loading, setLoading] = React.useState(true);
+    const [error, setError] = React.useState(null);
+    
+    React.useEffect(() => {
+      const cargarDestinos = async () => {
+        try {
+          const datos = await obtenerDestinoPorID(params.destino);
+          setDestino(datos);
+        } catch (err) {
+          setError(err);
+        } finally {
+          setLoading(false);
+        }
+      };
+      
+      cargarDestinos();
+    }, []);
+    if (loading) return <div>Cargando...</div>;
+    if (error) return <div>Error cargando datos...</div>
+
+
+    console.log(destino)
+
   return (
     <main className={styles.mainContainer}>
+      
       <form
         className={styles.cardForm}
         onSubmit={(event) => {
@@ -28,7 +57,7 @@ function PaginReserva() {
             <p>
               Selecciona una ruta: 
             </p>
-            {rutas.map((ruta) => (
+            {destino?.rutas?.map((ruta) => (
               <label className = {styles.checkBoxLabel} htmlFor={ruta}>
                 {" "}
                 {ruta} <input name="ruta" type="radio" id={ruta} value={ruta} />{" "}
@@ -41,7 +70,7 @@ function PaginReserva() {
             Actividades{" "}
             <select  name="Actividades" id="Actividades">
             
-              {actividades.map((actividad) => (
+              {destino?.actividades_disponibles?.map((actividad) => (
                 <option className = {styles.selectOption} value={actividad}> {actividad} </option>
               ))}
               

@@ -3,26 +3,44 @@ import React from "react";
 import styles from "./DestinationDetailCard.module.css";
 import Header from "./Header";
 import { useParams } from "react-router";
-import { destinos } from "./destino";
-
+import { obtenerDestinoPorID } from "../firebase/destinos.firebase";
+import { imagenesDestinos } from "./imagenesDestino";
 
 function DestinationDetailCard() {
   let params = useParams()
 
-    let detail = destinos.find((destino)=>destino.key==params.destino)
-    console.log(detail)
-    // recorre el array del destino buscando el destino con la misma ruta
-
-  console.log(params)
+  const [detail, setDetail] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(null);
+  
+  React.useEffect(() => {
+    const cargarDestinos = async () => {
+      try {
+        const datos = await obtenerDestinoPorID(params.destino);
+        setDetail(datos);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    cargarDestinos();
+  }, []);
+  if (loading) return <div>Cargando...</div>;
+  if (error) return <div>Error cargando datos...</div>
+   
   return (
     <section className={styles.detailBox}>
         <div className={styles.detailIzquierdo}>
-            <img src="/Foto_Avila.webp" className={styles.detailImage}/>
+            <img src={imagenesDestinos[detail.key]} alt={detail.nombre} className={styles.detailImage} />
 
 
-            <button className={styles.detailReservar}>
-                Reservar
-            </button>
+            <NavLink to={'/destinos/' + params.destino + '/reservar'} className={styles.detailReservar}>
+
+            Reservar
+            </NavLink>
+
 
         </div>
         <div className={styles.detailDerecho}>

@@ -1,65 +1,53 @@
 import React from "react";
 import styles from "./Destinos.module.css";
-import { useNavigate } from "react-router-dom";
+
 
 // Importar las imágenes
-import image1 from "../images/image1.jpg";
-import image2 from "../images/image2.png";
-import image3 from "../images/image3.webp";
-import image4 from "../images/image4.webp";
-import image5 from "../images/image5.jpg";
-import image6 from "../images/image6.webp";
-import backgroundImage from "../images/arteavila.png";
+
+import { obtenerDestinos } from "../firebase/destinos.firebase";
+import { imagenesDestinos } from "./imagenesDestino";
+import { NavLink } from "react-router";
 
 function Destinos() {
-  const navigate = useNavigate();
+    
+  const [destinos, setDestinos] = React.useState([]);
+const [loading, setLoading] = React.useState(true);
+const [error, setError] = React.useState(null);
 
-  // Modificación de handleClick para usar rutas relativas
-  const handleClick = (route) => {
-    navigate(`/${route}`); // Ruta relativa
+React.useEffect(() => {
+  const cargarDestinos = async () => {
+    try {
+      const datos = await obtenerDestinos();
+      setDestinos(datos);
+    } catch (err) {
+      setError(err);
+    } finally {
+      setLoading(false);
+    }
   };
+  
+  cargarDestinos();
+}, []);
+if (loading) return <div>Cargando...</div>;
+if (error) return <div>Error cargando datos...</div>
+ 
 
   return (
-    <div className={styles.container} style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className={styles.container}>
       <h1>Destinos</h1>
       <div className={styles.largeCard}>
-        <div className={styles.cardsContainer}>
-          <button className={styles.card} onClick={() => handleClick("SabasNieves")}>
+      <div className={styles.cardsContainer}>
+        {destinos.map((destino)=><NavLink className={styles.card} key = {destino.key} to = {'/destinos/'+ destino.id}>
+
             <div className={styles.cardContent}>
-              <img src={image1} alt="Sabas Nieves" />
-              <h2>Sabas Nieves</h2>
+              <img src={imagenesDestinos[destino.key]} alt={destino.nombre} />
+              <h2>{destino.nombre}</h2>
+
+              
             </div>
-          </button>
-          <button className={styles.card} onClick={() => handleClick("Lagunazo")}>
-            <div className={styles.cardContent}>
-              <img src={image2} alt="Lagunazo" />
-              <h2>Lagunazo</h2>
-            </div>
-          </button>
-          <button className={styles.card} onClick={() => handleClick("PicoOriental")}>
-            <div className={styles.cardContent}>
-              <img src={image3} alt="Pico Oriental" />
-              <h2>Pico Oriental</h2>
-            </div>
-          </button>
-          <button className={styles.card} onClick={() => handleClick("PicoNaiguata")}>
-            <div className={styles.cardContent}>
-              <img src={image4} alt="Pico Naiguatá" />
-              <h2>Pico Naiguatá</h2>
-            </div>
-          </button>
-          <button className={styles.card} onClick={() => handleClick("ElBanquito")}>
-            <div className={styles.cardContent}>
-              <img src={image5} alt="El Banquito" />
-              <h2>El Banquito</h2>
-            </div>
-          </button>
-          <button className={styles.card} onClick={() => handleClick("PiedraIndio")}>
-            <div className={styles.cardContent}>
-              <img src={image6} alt="Piedra Indio" />
-              <h2>Piedra Indio</h2>
-            </div>
-          </button>
+
+          </NavLink>)}
+  
         </div>
       </div>
     </div>
@@ -67,3 +55,6 @@ function Destinos() {
 }
 
 export default Destinos;
+
+
+

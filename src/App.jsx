@@ -8,15 +8,20 @@ import DestinationDetail from './components/DestinationDetail'
 import Novedades from './Pages/Novedades';
 import Contacto from './Pages/Contacto';
 
-import SabasNieves from './Pages/DestinosDetalles/SabasNieves';
+/*import SabasNieves from './Pages/DestinosDetalles/SabasNieves';
 import Lagunazo from './Pages/DestinosDetalles/Lagunazo';
 import ElBanquito from './Pages/DestinosDetalles/ElBanquito';
 import PicoNaiguata from './Pages/DestinosDetalles/PicoNaiguata';
 import PiedraIndio from './Pages/DestinosDetalles/PiedraIndio';
 import PicoOriental from './Pages/DestinosDetalles/PicoOriental';
+<<<<<<< HEAD
 
 import PaginReserva from "./components/PaginReserv";
 
+=======
+*/
+import PaginReserva from "./components/PaginReserv"
+>>>>>>> 6ea10caeb2f221a7ba99a6cd1991753bee5ff322
 
 
 import AdminDashboard from "./components/Administracion/AdminDashboard";
@@ -29,10 +34,8 @@ function App() {
     <BrowserRouter>
       <Routes>
 
+        <Route element={<HomeLayout />}>                  
 
-        
-
-        <Route element={<HomeLayout />}>
 
 
           <Route path="/" element={<Home />} />
@@ -44,12 +47,6 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
 
 
-          <Route path="/SabasNieves" element={<SabasNieves />} />
-          <Route path="/Lagunazo" element={<Lagunazo />} />
-          <Route path="/ElBanquito" element={<ElBanquito />} />
-          <Route path="/PicoNaiguata" element={<PicoNaiguata />} />
-          <Route path="/PiedraIndio" element={<PiedraIndio />} />
-          <Route path="/PicoOriental" element={<PicoOriental />} />
 
 
           <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />

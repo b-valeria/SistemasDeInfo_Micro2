@@ -15,7 +15,8 @@ import PicoNaiguata from './Pages/DestinosDetalles/PicoNaiguata';
 import PiedraIndio from './Pages/DestinosDetalles/PiedraIndio';
 import PicoOriental from './Pages/DestinosDetalles/PicoOriental';
 
-import PaginReserva from "./components/PaginReserv"
+import PaginReserva from "./components/PaginReserv";
+
 
 
 import AdminDashboard from "./components/Administracion/AdminDashboard";
@@ -28,8 +29,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route element={<HomeLayout />}>                  
 
+        
+
+        <Route element={<HomeLayout />}>
 
 
           <Route path="/" element={<Home />} />
@@ -41,6 +44,12 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
 
 
+          <Route path="/SabasNieves" element={<SabasNieves />} />
+          <Route path="/Lagunazo" element={<Lagunazo />} />
+          <Route path="/ElBanquito" element={<ElBanquito />} />
+          <Route path="/PicoNaiguata" element={<PicoNaiguata />} />
+          <Route path="/PiedraIndio" element={<PiedraIndio />} />
+          <Route path="/PicoOriental" element={<PicoOriental />} />
 
 
           <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />

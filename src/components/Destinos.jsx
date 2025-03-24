@@ -8,6 +8,7 @@ import { obtenerDestinos } from "../firebase/destinos.firebase";
 import { imagenesDestinos } from "./imagenesDestino";
 import { NavLink } from "react-router";
 
+
 function Destinos() {
     
   const [destinos, setDestinos] = React.useState([]);
@@ -40,6 +41,10 @@ if (error) return <div>Error cargando datos...</div>
         {destinos.map((destino)=><NavLink className={styles.card} key = {destino.key} to = {'/destinos/'+ destino.id}>
 
             <div className={styles.cardContent}>
+              <img src={imagenesDestinos[destino.key]} alt={destino.nombre} />
+              <h2>{destino.nombre}</h2>
+
+              
               <img src={imagenesDestinos[destino.key]} alt={destino.nombre} />
               <h2>{destino.nombre}</h2>
 

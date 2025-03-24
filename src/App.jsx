@@ -6,6 +6,7 @@ import Register from "./Pages/Register"
 import Destinos from "./components/Destinos";
 import DestinationDetail from './components/DestinationDetail'
 import Novedades from './Pages/Novedades';
+import Contacto from './Pages/Contacto';
 
 /*import SabasNieves from './Pages/DestinosDetalles/SabasNieves';
 import Lagunazo from './Pages/DestinosDetalles/Lagunazo';
@@ -14,11 +15,9 @@ import PicoNaiguata from './Pages/DestinosDetalles/PicoNaiguata';
 import PiedraIndio from './Pages/DestinosDetalles/PiedraIndio';
 import PicoOriental from './Pages/DestinosDetalles/PicoOriental';
 */
+
 import PaginReserva from "./components/PaginReserv"
-
-
 import AdminDashboard from "./components/Administracion/AdminDashboard";
-
 
 function App() {
 
@@ -37,6 +36,8 @@ function App() {
           <Route path="/destinos" element={<Destinos />} />
           <Route path='/destinos/:destino' element={<DestinationDetail/>} />
           <Route path="/novedades" element={<Novedades />} /> 
+          <Route path="/contacto" element={<Contacto />} />
+
 
 
 

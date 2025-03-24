@@ -43,12 +43,6 @@ if (error) return <div>Error cargando datos...</div>
             <div className={styles.cardContent}>
               <img src={imagenesDestinos[destino.key]} alt={destino.nombre} />
               <h2>{destino.nombre}</h2>
-
-              
-              <img src={imagenesDestinos[destino.key]} alt={destino.nombre} />
-              <h2>{destino.nombre}</h2>
-
-              
             </div>
 
           </NavLink>)}

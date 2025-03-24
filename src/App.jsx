@@ -38,9 +38,6 @@ function App() {
           <Route path="/novedades" element={<Novedades />} /> 
           <Route path="/contacto" element={<Contacto />} />
 
-
-
-
           <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />
         
 

@@ -19,12 +19,18 @@ import PaginReserva from "./components/PaginReserv";
 
 
 
+import AdminDashboard from "./components/Administracion/AdminDashboard";
+
+
 function App() {
 
 
   return (
     <BrowserRouter>
       <Routes>
+
+
+        
 
         <Route element={<HomeLayout />}>
 
@@ -47,6 +53,11 @@ function App() {
 
 
           <Route path='/destinos/:destino/reservar' element={<PaginReserva/>} />
+        
+
+
+
+          <Route path="/Administrador" element={<AdminDashboard />} />
         </Route>
 
 

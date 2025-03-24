@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Destinos.module.css";
 
+
 // Importar las imágenes
 
 import { obtenerDestinos } from "../firebase/destinos.firebase";
@@ -37,15 +38,16 @@ if (error) return <div>Error cargando datos...</div>
       <div className={styles.largeCard}>
       <div className={styles.cardsContainer}>
         {destinos.map((destino)=><NavLink className={styles.card} key = {destino.key} to = {'/destinos/'+ destino.id}>
+
             <div className={styles.cardContent}>
               <img src={imagenesDestinos[destino.key]} alt={destino.nombre} />
               <h2>{destino.nombre}</h2>
 
               
             </div>
+
           </NavLink>)}
-          
-          
+  
         </div>
       </div>
     </div>

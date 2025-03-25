@@ -16,7 +16,8 @@ import PiedraIndio from './Pages/DestinosDetalles/PiedraIndio';
 import PicoOriental from './Pages/DestinosDetalles/PicoOriental';
 */
 
-import PaginReserva from "./components/PaginReserv"
+import PaginReserva from "./components/PaginReserv";
+
 
 import AdminDashboard from "./components/Administracion/AdminDashboard";
 
@@ -27,8 +28,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route element={<HomeLayout />}>                  
 
+        
+
+        <Route element={<HomeLayout />}>
 
 
           <Route path="/" element={<Home />} />

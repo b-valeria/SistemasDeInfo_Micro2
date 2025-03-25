@@ -31,7 +31,7 @@ React.useEffect(() => {
 }, []);
 if (loading) return <div>Cargando...</div>;
 if (error) return <div>Error cargando datos...</div>
- 
+ console.log(destinos)
 
   return (
     <div className={styles.container}>

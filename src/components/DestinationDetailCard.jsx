@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./DestinationDetailCard.module.css";
-import Header from "./Header";
+import { NavLink } from "react-router";
 import { useParams } from "react-router";
 import { obtenerDestinoPorID } from "../firebase/destinos.firebase";
 import { imagenesDestinos } from "./imagenesDestino";
@@ -29,7 +29,7 @@ function DestinationDetailCard() {
   }, []);
   if (loading) return <div>Cargando...</div>;
   if (error) return <div>Error cargando datos...</div>
-   
+  
   return (
     <section className={styles.detailBox}>
         <div className={styles.detailIzquierdo}>
